@@ -6,7 +6,7 @@ modello - VARCHAR - NOTNULL
 foto - VARCHAR - NOTNULL 
 descrizione - TEXT - NULL
 carrozzeria - VARCHAR - NULL
-colore - VARCHAR - NULL
+colore - VARCHAR - NOTNULL - DEFAULT(0)
 trazione - VARCHAR - NOTNULL - DEFAULT(0)
 numero_posti - TINYINT - NOTNULL
 numero_porte - TINYINT - NOTNULL
@@ -21,7 +21,7 @@ marce - TINYINT - NOTNULL
 cilindri - TINYINT - NOTNULL
 ultimo_tagliando - DATA - NULL
 ultimi_interventi_manutenzione - TEXT - NULL
-stato_di_conservazione - VARCHAR - NOTNULL
+stato_conservazione - VARCHAR - NOTNULL
 eventuali_danni - TEXT - NULL
 eventuali_accessori - TEXT - NULL
 prezzo - TINYINT - NOTNULL
